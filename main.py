@@ -1,6 +1,6 @@
 from pico2d import *
 from boy import Boy
-from grass import Grass
+from grass import Grass, Grass1
 from ball import Ball
 
 import game_world   # 게임 월드 모듈 임포트
@@ -34,6 +34,7 @@ def reset_world():
     game_world.add_object(boy,1) #게임 월드에 객체를 담는 함수 호출
 
     grass = Grass()
+    grass1 = Grass()
     game_world.add_object(grass) #게임 월드에 객체를 담는 함수 호출
     game_world.add_object(grass,2)
   
